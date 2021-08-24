@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+}
+
+#main {
+  background-color: #EEEEEE;
+  width: auto;
+  height: auto;
+  margin: 8px;
+}
+
+#title {
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Blinker', sans-serif;
+  font-size: 34px;
+  color: #333333;
+}
+
+p {
+  text-align: center;
+  font-family: 'Blinker', sans-serif;
+  font-size: 18px;
+  padding-top: 20px;
+  color: #333333;
+}
+
+#img-div {
+  margin: auto;
+  margin-top: 20px;
+  width: 73%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  background-color: #fff;
+  padding: 15px 12%;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  color: #333333;
+}
+
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+h2 {
+  color: #333333;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+  max-width: 600px;
+  line-height: 2;
+  font-size: 17px;
+  font-family: 'Blinker', sans-serif;
+  color: #333333;
+}
+
+.quote {
+  font-family: 'Blinker', sans-serif;
+  color: #333333;
+  max-width: 600px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+cite {
+  font-family: 'Blinker', sans-serif;
+  color: #333333;
+  max-width: 600px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#information-about {
+    font-weight: lighter;
+    color: #333333;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-bottom: 30px;
+    max-width: 779px;
+}
