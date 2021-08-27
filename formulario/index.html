@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de contato</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Entre em contato!</h1>
+        <p class="description">Preencha seus dados abaixo que eu falo com você!</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Nome</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="form-group">
+            <label for="age" id="number-label">Idade (opcional)</label>
+            <input type="number" id="number" min="7" max="110" placeholder="Digite sua idade">
+        </div>
+        <div class="form-group">
+            <p>Qual opção descreve melhor o seu estado atual?</p>
+            <select id="dropdown" class="form-control" name="mostLike" required>
+                <option disabled="" selected="" value="">Selecione uma opção</option>
+                <option value="desafios">Desafios</option>
+                <option value="projetos">Projetos</option>
+                <option value="comunidade">Comunidade</option>
+                <option value="open-source">Open Source</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Você recomendaria o Free Code Camp para um amigo?</p>
+            <label for="">
+                <input class="input-radio" name="recomendacao" value="recomendaria" type="radio">Recomendaria
+            </label>
+            <label for="">
+                <input class="input-radio" name="recomendacao" value="talvez" type="radio">Talvez
+            </label>
+            <label for="">
+                <input class="input-radio" name="recomendacao" value="sem-certeza" type="radio">Não tenho certeza
+            </label>
+        </div>
+        <div class="form-group">
+            <p>No que você gostaria de melhorar? (marque todas as opções que se aplica)</p>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="font-end-projects" >Projetos Front-end</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="back-end-projects">Projetos Back-end</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="data-visualization">Visualização de dados</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="challenges">Desafios</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="open-source-community">Comunidade Open Source</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="gitter-help-rooms">Chats de ajuda Gitter</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="videos">Videos</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="city-meetups">City Meetups</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="wiki">Wiki</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefer" type="checkbox" value="forum">Forum</input>
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefere" type="checkbox" value="additional-courses">Cursos Adicionais</input>
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Algum comentário ou sugestão?</p>
+            <textarea name="comment" class="input-textarea" id="comments" cols="30" rows="5" placeholder="Digite seu comentário aqui..."></textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn-submit" type="submit" id="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
