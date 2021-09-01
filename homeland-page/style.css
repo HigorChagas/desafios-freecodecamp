@@ -37,10 +37,34 @@
         text-align: center;
     }
 
-    input[type=button] {
+    input[type=submit] {
         margin: 10 auto;
         width: 100%;
         font-size: 0.7rem;
+    }
+
+    .products {
+        height: 29rem!important;
+    }
+
+    .level {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    ol {
+        margin: 33px -20px!important;
+    }
+
+    .video-container {
+        margin: 0!important;
+    }
+
+    .section-prices {
+        padding-top: 80px;
     }
 }
 
@@ -51,13 +75,21 @@
         font-size: 0.8rem;
     }
 
-    input[type=button] {
+    input[type=submit] {
         width: 15%;
         font-size: 0.8rem;
     }
 
     #nav-bar {
         padding-left: 0%!important;
+    }
+
+    .products {
+        width: 30%!important;
+    }
+
+    .video-container {
+        margin: 35px 6.5rem!important;
     }
 }
 
@@ -105,7 +137,7 @@ body {
     scroll-behavior: smooth;
 }
 
-#survey-form {
+#form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -139,6 +171,7 @@ input {
     background-color: #F1C40F;
     white-space: pre;
     cursor: pointer;
+    
 }
 
 .service-section {
@@ -153,6 +186,8 @@ input {
     font-size: 3.2rem;
     display: flex;
     flex-direction: row;
+    width: 10%;
+    height: 10%;
     /* position: absolute;
     left: -2rem;
     font-size: 3.2rem;
