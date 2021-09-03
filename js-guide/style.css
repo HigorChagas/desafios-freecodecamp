@@ -77,6 +77,8 @@ h1 {
 .main-section p {
     font-size: 1.1rem;
     margin: 20px;
+    max-width: 95%;
+    text-align: left;
 }
 
 .h2-link:hover {
@@ -162,4 +164,23 @@ td {
 .code-img {
     display: block;
     margin: 40px;
+}
+
+.css-code {
+    letter-spacing: 2px;
+}
+
+.player-code {
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid rgba(0,0,200,0.6);
+    background: rgba(0,0,200,0.3);
+    color: rgba(0,0,200,0.6);
+    box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
 }

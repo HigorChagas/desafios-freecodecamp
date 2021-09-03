@@ -97,7 +97,75 @@
             </div>
             <img class="code-img" src="img/just-html.png" alt="Exemplo do código acima">
             <p>Nós podemos adicionar um pouco de CSS na mistura, para deixar nosso parágrafo um pouco mais atraente:</p>
+            <div class="code-example">
+                <code>
+                    <p  class="css-code">p { <br>
+                        font-family: 'helvetica neue', helvetica, sans-serif;
+                        <br>letter-spacing: 1px;
+                        <br>text-transform: uppercase;
+                        <br>text-align: center;
+                        <br>border: 2px solid rgba(0,0,200,0.6);
+                        <br>background: rgba(0,0,200,0.3);
+                        <br>color: rgba(0,0,200,0.6);
+                        <br>box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+                        <br>border-radius: 10px;
+                        <br>padding: 3px 10px;
+                        <br>display: inline-block;
+                        <br>cursor:pointer;<br>
+                      }
+                    </p>
+                </code>
+            </div>
+            <img src="img/html-and-css.png" alt="Exemplo do mesmo código acima mas com CSS" class="code-img">
+            <p>E finalmente, nós podemos adicionar JavaScript para implementar um comportamento dinâmico:</p>
+            <div class="code-example">
+                <code>
+                    <p>const para = document.querySelector('p');
+                        <br><br>
+                        para.addEventListener('click', atualizarNome);
+                        <br><br>
+                        function atualizarNome() {
+                          var nome = prompt('Insira um novo nome');
+                          para.textContent = 'Jogador 1: ' + nome;<br>
+                        }
+                    </p>
+                </code>
+            </div>
+            <p class="player-code" id="player-code">Jogador 1: Chris</p>
+            <p>Experimente clicar no botão acima para ver o que acontece.</p>
+        </section>
+        <section class="main-section">
+            <h2>Um primeiro mergulho no JavaScript</h2>
+            <p>Agora você poderá aprender um pouco sobre a Teoria do Javascript e o que você poderá fazer com ele. Nós vamos lhe fornecer aqui um Curso rápido sobre as características básicas do JavaScript através de um tutorial completamente prático. Você irá construir um simples jogo de "Adivinhe o número", passo a passo. </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Pré requisitos:</th>
+                        <td>Conhecimentos básicos de informática, uma compreensão básica de HTML e CSS, uma compreensão do que é JavaScript.</td>
+                    </tr>
+                    <tr>
+                        <th>Objetivo:</th>
+                        <td>Ter um primeiro bit de experiência em escrever um pouco de  JavaScript, e adquirir  pelo menos uma compreensão básica do que envolve escrever um programa em JavaScript.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Nós não esperamos que você entenda todo o código imediatamente - Apenas queremos ensinar-lhe os melhores conceitos por enquanto e dar a você uma idéia de como o JavaScript (e outras linguagens de programação) funcionam. Em artigos posteriores você vai rever todos esses recursos com muito mais detalhes!</p>
+            <div class="note-card">
+                <p><strong>Nota:</strong> Muitos dos recursos de código que você verá no JavaScript são iguais aos de outra linguagem de programação - funções, loops, etc. A sintaxe do código parece diferente, mas os conceitos ainda são praticamente os mesmos.</p>
+            </div>
         </section>
     </main>
+
+
+    <script>
+        var para = document.getElementById('player-code');
+
+        para.addEventListener('click', atualizarNome);
+
+        function atualizarNome() {
+        var nome = prompt('Insira um novo nome');
+        para.textContent = 'Jogador 1: ' + nome;
+        }
+    </script>
 </body>
 </html>
