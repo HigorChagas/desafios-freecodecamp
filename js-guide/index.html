@@ -8,66 +8,66 @@
     <title>Guia de JS</title>
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
         
-        <div class="title-container">
+        <div class="navbar__title">
             <header>Documentação JS</header>
         </div>
-        <div class="nav-container">
-            <div class="vertical-line"></div>
+        <div class="navbar__container">
+            <div class="navbar__vertical-line"></div>
             <hr>
-            <a href="" class="nav-link">Visão geral dos Primeiros passos com JavaScript</a>
+            <a href="#first-steps" class="navbar__link">Visão geral dos Primeiros passos com JavaScript</a>
             <hr>
-            <a href="" class="nav-link">O que é JavaScript?</a>
+            <a href="#what-is" class="navbar__link">O que é JavaScript?</a>
             <hr>
-            <a href="" class="nav-link">Um primeiro olhar em JavaScript</a>
+            <a href="#first-dive" class="navbar__link">Primeiro mergulho</a>
             <hr>
-            <a href="" class="nav-link">O que deu errado? Solução de problemas de JavaScript</a>
+            <a href="#fundamentals" class="navbar__link">Fundamentos</a>
             <hr>
-            <a href="" class="nav-link">Guardando a informação que precisa — Variáveis</a>
+            <a href="#variables" class="navbar__link">Variáveis</a>
             <hr>
-            <a href="" class="nav-link">Básico de JavaScript — Números e operadores</a>
+            <a href="" class="navbar__link">Básico de JavaScript — Números e operadores</a>
             <hr>
-            <a href="" class="nav-link">Lidando com textos — Strings em JavaScript</a>
+            <a href="" class="navbar__link">Lidando com textos — Strings em JavaScript</a>
             <hr>
-            <a href="" class="nav-link">Métodos de String úteis</a>
+            <a href="" class="navbar__link">Métodos de String úteis</a>
             <hr>
-            <a href="" class="nav-link">"Arrays" — Arranjos</a>
+            <a href="" class="navbar__link">"Arrays" — Arranjos</a>
             <hr>
-            <a href="" class="nav-link">Tomando decisões no seu código — Condicionais</a>
+            <a href="" class="navbar__link">Tomando decisões no seu código — Condicionais</a>
             <hr>
-            <a href="" class="nav-link">Código de repetição</a>
+            <a href="" class="navbar__link">Código de repetição</a>
             <hr>
-            <a href="" class="nav-link">Funções — Blocos de códigos reutilizáveis</a>
+            <a href="" class="navbar__link">Funções — Blocos de códigos reutilizáveis</a>
             <hr>
-            <a href="" class="nav-link">Construa sua própria função</a>
+            <a href="" class="navbar__link">Construa sua própria função</a>
             <hr>
-            <a href="" class="nav-link">Retorno de valores em funções</a>
+            <a href="" class="navbar__link">Retorno de valores em funções</a>
             <hr>
-            <a href="" class="nav-link">Introdução a eventos</a>
+            <a href="" class="navbar__link">Introdução a eventos</a>
             <hr>
         </div>
     </nav>
 
-    <main id="main-doc">
-        <section class="main-section">
+    <main id="main-doc" class="main">
+        <section class="main__section" id="first-steps">
             <h1>Primeiros passos com JavaScript</h1>
             <p>
                 Em nosso primeiro módulo de JavaScript, vamos responder algumas questões fundamentais como "o que é JavaScript?", "com o que se parece?", e "o que ele pode fazer?", antes de levá-lo a sua primeira experiência em escrever JavaScript. Depois disso, vamos discutir em detalhes algumas peças chaves, como variáveis, cadeias de caracteres (strings), números (numbers) e matrizes (arrays).  
             </p>
-            <a href="#" class="h2-link">Pré-requisitos</a>
+            <a href="#" class="main__h2 main__h2--hover">Pré-requisitos</a>
             <p>Antes de iniciar esse módulo, você não precisa de nenhum conhecimento prévio de JavaScript, mas você deve ter alguma familiaridade com HTML e CSS. Te recomendamos a estudar os seguintes módulos antes de começar com o JavaScript:</p>
             <ul>
-                <li><a href="" class="tutorial-link">Iniciando com a Web</a></li>
-                <li><a href="" class="tutorial-link">Introdução ao HTML</a></li>
-                <li><a href="" class="tutorial-link">Introdução ao CSS</a></li>
+                <li><a href="" class="main__tutorial-link main__tutorial-link--hover">Iniciando com a Web</a></li>
+                <li><a href="" class="main__tutorial-link main__tutorial-link--hover">Introdução ao HTML</a></li>
+                <li><a href="" class="main__tutorial-link main__tutorial-link--hover">Introdução ao CSS</a></li>
             </ul>
 
-            <div class="note-card">
+            <div class="main__note-card">
                 <p><strong>Nota:</strong> Se você está trabalhando em um computador/tablet/outro dispositivo onde você não pode criar os seus próprio arquivos, você pode experimentar (em sua maioria) os códigos de exemplo em um programa de codificação online como JSBin ou Thimble.</p>
             </div>
         </section>
-        <section class="main-section">
+        <section class="main__section" id="what-is">
             <h2>O que é JavaScript?</h2>
             <p>Sejam bem-vindos ao curso de JavaScript para iniciantes do MDN! Neste primeiro artigo vamos fazer uma análise profunda da linguagem, respondendo questões como "O que é JavaScript?", e "O que ele faz?", para você se sentir confortável com a proposta da linguagem.</p>
             <table>
@@ -82,24 +82,24 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="#" class="h2-link">Definição de alto nível</a>
+            <a href="#" class="main__h2 main__h2--hover">Definição de alto nível</a>
             <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc. — você pode apostar que o JavaScript provavelmente está envolvido. É a terceira camada do bolo das tecnologias padrões da web, duas das quais (HTML e CSS) nós falamos com muito mais detalhes em outras partes da Área de Aprendizado.</p>
-            <img class="cake-img" src="/img/cake.png" alt="Imagem ilustrando as 3 principais técnologias do Front-end">
+            <img class="main__img" src="/img/cake.png" alt="Imagem ilustrando as 3 principais técnologias do Front-end">
             <ul>
-                <li class="language-definition"><strong>HTML</strong> é a linguagem de marcação que nós usamos para estruturar e dar significado para o nosso conteúdo web. Por exemplo, definindo parágrafos, cabeçalhos, tabelas de conteúdo, ou inserindo imagens e vídeos na página.</li>
-                <li class="language-definition"><strong>CSS</strong> é uma linguagem de regras de estilo que nós usamos para aplicar estilo ao nosso conteúdo HTML. Por exemplo, definindo cores de fundo e fontes, e posicionando nosso conteúdo em múltiplas colunas.</li>
-                <li class="language-definition"><strong>JavScript</strong> é uma linguagem de programação que permite a você criar conteúdo que se atualiza dinamicamente, controlar múltimídias, imagens animadas, e tudo o mais que há de intessante. Ok, não tudo, mas é maravilhoso o que você pode efetuar com algumas linhas de código JavaScript.</li>
+                <li class="main__language-definition"><strong>HTML</strong> é a linguagem de marcação que nós usamos para estruturar e dar significado para o nosso conteúdo web. Por exemplo, definindo parágrafos, cabeçalhos, tabelas de conteúdo, ou inserindo imagens e vídeos na página.</li>
+                <li class="main__language-definition"><strong>CSS</strong> é uma linguagem de regras de estilo que nós usamos para aplicar estilo ao nosso conteúdo HTML. Por exemplo, definindo cores de fundo e fontes, e posicionando nosso conteúdo em múltiplas colunas.</li>
+                <li class="main__language-definition"><strong>JavScript</strong> é uma linguagem de programação que permite a você criar conteúdo que se atualiza dinamicamente, controlar múltimídias, imagens animadas, e tudo o mais que há de intessante. Ok, não tudo, mas é maravilhoso o que você pode efetuar com algumas linhas de código JavaScript.</li>
             </ul>
             <p>As três camadas ficam muito bem uma em cima da outra. Vamos exemplificar com um simples bloco de texto. Nós podemos marcá-lo usando HTML para dar estrutura e propósito: </p>
 
-            <div class="code-example">
+            <div class="main__code-example">
                     <code><span><</span>p<span>></span> Jogador 1: Chris <span><</span>p<span>></span></code>
             </div>
-            <img class="code-img" src="img/just-html.png" alt="Exemplo do código acima">
+            <img class="main__code-img" src="img/just-html.png" alt="Exemplo do código acima">
             <p>Nós podemos adicionar um pouco de CSS na mistura, para deixar nosso parágrafo um pouco mais atraente:</p>
-            <div class="code-example">
+            <div class="main__code-example">
                 <code>
-                    <p  class="css-code">p { <br>
+                    <p  class="main__code-block">p { <br>
                         font-family: 'helvetica neue', helvetica, sans-serif;
                         <br>letter-spacing: 1px;
                         <br>text-transform: uppercase;
@@ -116,9 +116,9 @@
                     </p>
                 </code>
             </div>
-            <img src="img/html-and-css.png" alt="Exemplo do mesmo código acima mas com CSS" class="code-img">
+            <img src="img/html-and-css.png" alt="Exemplo do mesmo código acima mas com CSS" class="main__code-img">
             <p>E finalmente, nós podemos adicionar JavaScript para implementar um comportamento dinâmico:</p>
-            <div class="code-example">
+            <div class="main__code-example">
                 <code>
                     <p>const para = document.querySelector('p');
                         <br><br>
@@ -131,10 +131,10 @@
                     </p>
                 </code>
             </div>
-            <p class="player-code" id="player-code">Jogador 1: Chris</p>
+            <p class="main__player-code" id="player-code">Jogador 1: Chris</p>
             <p>Experimente clicar no botão acima para ver o que acontece.</p>
         </section>
-        <section class="main-section">
+        <section class="main__section" id="first-dive">
             <h2>Um primeiro mergulho no JavaScript</h2>
             <p>Agora você poderá aprender um pouco sobre a Teoria do Javascript e o que você poderá fazer com ele. Nós vamos lhe fornecer aqui um Curso rápido sobre as características básicas do JavaScript através de um tutorial completamente prático. Você irá construir um simples jogo de "Adivinhe o número", passo a passo. </p>
             <table>
@@ -150,9 +150,116 @@
                 </tbody>
             </table>
             <p>Nós não esperamos que você entenda todo o código imediatamente - Apenas queremos ensinar-lhe os melhores conceitos por enquanto e dar a você uma idéia de como o JavaScript (e outras linguagens de programação) funcionam. Em artigos posteriores você vai rever todos esses recursos com muito mais detalhes!</p>
-            <div class="note-card">
+            <div class="main__note-card">
                 <p><strong>Nota:</strong> Muitos dos recursos de código que você verá no JavaScript são iguais aos de outra linguagem de programação - funções, loops, etc. A sintaxe do código parece diferente, mas os conceitos ainda são praticamente os mesmos.</p>
             </div>
+            <a href="#" class="main__h2 main__h2--hover">Pensando como um Programador</a>
+            <p>Uma das coisas mais difíceis de aprender na programação não é a sintaxe que você precisa aprender, mas como aplicá-la para resolver problemas do mundo real. Você precisa começar a pensar como um programador - isso geralmente envolve olhar para as descrições do que seu programa precisa fazer e analisar como eles podem ser aplicados na solução real (prática), quais recursos de código são necessários para alcançar esse objetivo, e como fazê-los trabalhar em conjunto.</p>
+            <p>Isso requer um mistura de trabalho duro, experiência com a sintaxe de programação utilizada e prática, além de um pouco de criatividade, é claro. Quanto mais você programa, melhor programador se torna. Nós não prometemos transformar seu cérebro em um "cérebro de programador" em 5 minutos, mas vamos te dar todas as oportunidades para pensar na prática como um programador ao longo deste curso. </p>
+
+            <a href="#" class="main__h2 main__h2--hover">Um exemplo "Olá mundo"</a>
+            <p>A seção acima pode parecer realmente empolgante, e assim deve ser  — o JavaScript é uma das tecnologias mais ativas da Web e, à medida que você começa a usá-lo bem, seus sites entrarão em uma nova dimensão de poder e criatividade.</p>
+            <p>No entanto, ficar confortável com o JavaScript é um pouco mais difícil do que ficar confortável com HTML e CSS. Você pode ter que começar pequeno e continuar trabalhando em pequenos passos consistentes. Para começar, mostraremos como adicionar alguns JavaScript básicos à sua página, criando um exemplo de "Olá mundo!"</p>
+            <div class="main__note-card main__note-card--yellow">
+                <p><strong>Importante:</strong> Antes de prosseguir com o conteúdo a seguir, leia todos os tópicos acima.</p>
+            </div>
+            <p>Primeiro, vá para o seu site de teste e crie uma nova pasta chamada <code>scripts.</code> Em seguida, dentro da nova pasta de scripts que você acabou de criar, crie um novo arquivo chamado <code>main.js</code>. Salve na sua pasta de <code>scripts.</code></p>
+            <p>Em seguida, no seu arquivo <code>index.html</code>, insira o seguinte elemento em uma nova linha logo antes da tag de fechamento <code><span><</span><span>/</span>body<span>></span></code>: </p>
+            <div class="main__note-card">
+                <p><span><</span>script src="scripts/main.js"><span><span><</span>/</span>script></p>
+            </div>
+            <div class="main__note-card">
+                <p>const meuCabecalho = document.querySelector('h1');<br>
+                    meuCabecalho.textContent = 'Ola mundo!';</p>
+            </div>
+            <p>Por fim, verifique se os arquivos HTML e Javascript estão salvos e, em seguida, carregue o <code>index.html</code> no navegador. Você deve ver algo do tipo:</p>
+            <img src="img/hello-world.png" alt="Imagem mostrando o exemplho Hello World feito acima." class="main__code-img">
+            <div class="main__note-card">
+                <p>Nota: A razão pela qual colocamos o elemento <code></code><span><span><</span>/</span>script> perto da parte inferior do arquivo HTML, é que o HTML é carregado pelo navegador na ordem em que ele aparece no arquivo. Se o JavaScript é carregado primeiro ele pode afetar o HTML abaixo dele, mas as vezes isso pode não funcionar, já que o JavaScript seria carregado antes do HTML em que ele deveria trabalhar. Portanto, colocar o JavaScript próximo à parte inferior da página HTML geralmente é um meio de corrigir isto</p>
+            </div>
+            <a href="#" class="main__h2 main__h2--hover">O que aconteceu?</a>
+            <p>Seu texto de título foi alterado para "Hello world!" usando JavaScript. Você fez isso primeiro usando uma função chamada <code>querySelector()</code> para obter uma referência ao título e armazená-lo em uma variável chamada meuCabecalho. Isso é muito parecido ao que fizemos usando seletores CSS. Quando queremos fazer algo em um elemento, primeiro você precisa selecioná-lo.</p>
+            <p>Depois disso, você define o valor da propriedade <code>textContent</code> para "Hello world!", na variável <code>meuCabecalho</code> (que representa o conteúdo do título).</p>
+            <div class="main__note-card">
+                <p><strong>Nota:</strong> Os dois recursos usados acima são partes da API do Modelo de Objeto de Documento (DOM), que permite manipular documentos.</p>
+            </div>
+        </section>
+        <section class="main__section" id="fundamentals">
+            <a href="#intensive" class="main__h2 main__h2--hover" id="intesive">Curso intensivo de fundamentos da linguagem</a>
+            <p>Vamos explicar alguns dos principais recursos da linguagem JavaScript, para dar a você um melhor entendimento de como tudo funciona. Vale a pena notar que esses recursos são comuns a todas as linguagens de programação, por isso, se você dominar esses fundamentos, estará no caminho certo para programar qualquer coisa!</p>
+            <div class="main__note-card main__note-card--yellow"><strong>Importante:</strong>: Nesse artigo, tente escrever linhas de código de exemplo no seu console JavaScript para ver o que acontece</div>
+            <a href="#variables" class="main__h2 main__h2--hover" id="variables">Variáveis</a>
+            <p>Variáveis são espaços na memória do computador onde você pode armazenar dados. Você começa declarando uma variável com a palavra-chave <code>var</code> (menos recomendado, se aprofunde mais para uma explicação) ou a palavra chave <code>let</code>, seguida por qualquer nome que você queira chamá-la:</p>
+            <div class="main__code-example">
+                <p>let minhaVariavel;</p>
+            </div>
+            <div class="main__note-card">
+                <p><strong>Nota:</strong> Ponto-e-vírgula no fim de uma linha indica onde uma instrução termina; só é absolutamente necessário quando você precisa separar instruções em uma única linha. No entanto, algumas pessoas acreditam que é uma boa prática colocá-las no final de cada instrução.</p>
+            </div>
+            <div class="main__note-card">
+                <p><strong>Nota:</strong> Você pode dar quase qualquer nome a uma variável, mas há algumas restrições</p>
+            </div>
+            <div class="main__note-card">
+                <p>Nota: JavaScript é case sensitive — <code>minhaVariavel</code> é  diferente de <code>minhavariavel</code>. Se você estiver tendo problemas no seu código, cheque seu casing!</p>
+            </div>
+            <p>Depois de declarar uma variável, você pode dar a ela um valor:</p>
+            <div class="main__code-example">
+                minhaVariavel = 'Bob';
+            </div>
+            <p>Você pode fazer as duas operações na mesma linha se você quiser:</p>
+            <div class="main__code-example">
+                let minhaVariavel = 'Bob';
+            </div>
+            <p>Você pode retornar o valor chamando a variável pelo nome:</p>
+            <div class="main__code-example">
+                minhaVariavel;
+            </div>
+            <p>Depois de dar à variável um valor, você pode mudá-lo:</p>
+            <div class="main__code-example">
+                let minhaVAriavel = 'Bob';<br>
+                minhaVariavel = 'Steve';
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Variável</th>
+                        <th>Explicação</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>String</th>
+                        <td class="main__row">Uma sequência de texto é conhecida como uma string. Para mostrar que o valor é uma string, você deve envolvê-la em aspas.</td>
+                        <td>let minhaVariavel = 'Bob';</td>
+                    </tr>
+                    <tr>
+                        <th>Objetivo:</th>
+                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Objetivo:</th>
+                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Objetivo:</th>
+                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Objetivo:</th>
+                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Objetivo:</th>
+                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 

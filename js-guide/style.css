@@ -4,15 +4,16 @@
 * {
     margin: 0;
     font-family: 'Zilla Slab', serif;
+    scroll-behavior: smooth;
 
 }
 
-#navbar {
+.navbar {
     position: relative;
 
 }
 
-.nav-container {
+.navbar__container {
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -23,7 +24,7 @@
     overflow-x: scroll;
 }
 
-.vertical-line {
+.navbar__vertical-line {
     height: 100%;
     border-left: 1px solid black;
     position: absolute;
@@ -31,7 +32,7 @@
     z-index: 999;
 }
 
-.title-container {
+.navbar__title {
     width: 25%;
     background-color: rgb(250, 245, 245);
     position: fixed;
@@ -47,7 +48,7 @@ header {
     font-weight: 400;
     
 }
-.nav-link {
+.navbar__link {
     text-decoration: none;
     margin: 15px 10px;
     text-align: left;
@@ -56,7 +57,7 @@ header {
     margin-left: 10px;
 }
 
-#main-doc {
+.main {
     width: 75%;
     height: 3000px;
     float: right;
@@ -67,30 +68,30 @@ h1 {
     padding: 10px 35px;
 }
 
-.h2-link {
+.main__h2 {
     font-size: 2rem;
     text-decoration: none;
     color: black;
     margin: 20px 50px;
 }
 
-.main-section p {
+.main__section p {
     font-size: 1.1rem;
     margin: 20px;
     max-width: 95%;
     text-align: left;
 }
 
-.h2-link:hover {
+.main__h2--hover:hover {
     border-bottom: 1px solid;
 }
 
-.tutorial-link {
+.main__tutorial-link {
     color: #134d6e;
     padding: 6px;
 }
 
-.tutorial-link:hover {
+.main__tutorial-link--hover:hover {
     text-decoration: none;
 }
 
@@ -98,7 +99,7 @@ ul {
     padding-left: 87px;
 }
 
-.note-card {
+.main__note-card {
     background-color: #DDEAFF;
     width: 75%;
     text-align: left;
@@ -106,7 +107,7 @@ ul {
     margin: 50px;
 }
 
-.note-card > p {
+.main__note-card > p {
     font-size: 1.1rem;
     padding: 15px;
 }
@@ -126,32 +127,33 @@ table {
 }
 
 th {
-    text-align: left;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     background-color: #D5D5D5;
+    
     padding: 25px;
 }
 
 td {
     text-align: center;
     border-bottom: 1px solid black;
+    border-right: 1px solid black;
     border-collapse: collapse;
 }
 
-.cake-img {
+.main__img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
 }
 
-.language-definition {
+.main__language-definition {
     font-size: 1.05em;
     padding: 5px;
 }
 
-.code-example {
+.main__code-example {
     width: 80%;
     height: 20%;
     background-color:#F4F4F4;
@@ -161,16 +163,16 @@ td {
     padding: 50px;
 }
 
-.code-img {
+.main__code-img {
     display: block;
     margin: 40px;
 }
 
-.css-code {
+.main__code-block {
     letter-spacing: 2px;
 }
 
-.player-code {
+.main__player-code {
     font-family: 'helvetica neue', helvetica, sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -183,4 +185,21 @@ td {
     padding: 3px 10px;
     display: inline-block;
     cursor: pointer;
+}
+
+.main__note-card--yellow {
+    background-color: #FBEC74;
+    border-left: 6px solid #CBBD30;
+    padding: 20px;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 0 3px;
+    font-family: consolas;
+    font-size: 0.9rem;
+}
+
+.main__row {
+    max-width: 2rem!important;
 }
