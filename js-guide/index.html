@@ -26,7 +26,7 @@
             <hr>
             <a href="#variables" class="navbar__link">Variáveis</a>
             <hr>
-            <a href="" class="navbar__link">Básico de JavaScript — Números e operadores</a>
+            <a href="#comentaries" class="navbar__link">Comentários</a>
             <hr>
             <a href="" class="navbar__link">Lidando com textos — Strings em JavaScript</a>
             <hr>
@@ -230,36 +230,48 @@
                 <tbody>
                     <tr>
                         <th>String</th>
-                        <td class="main__row">Uma sequência de texto é conhecida como uma string. Para mostrar que o valor é uma string, você deve envolvê-la em aspas.</td>
+                        <td>Uma sequência de texto é conhecida como uma string. Para mostrar que o valor é uma string, você deve envolvê-la em aspas.</td>
                         <td>let minhaVariavel = 'Bob';</td>
                     </tr>
                     <tr>
-                        <th>Objetivo:</th>
-                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
-                        <td></td>
+                        <th>Number</th>
+                        <td>Um número. Números não tem aspas ao redor deles.</td>
+                        <td>let minhaVariavel = 10;</td>
                     </tr>
                     <tr>
-                        <th>Objetivo:</th>
-                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
-                        <td></td>
+                        <th>Boolean</th>
+                        <td>>Um valor verdadeiro ou falso. As palavras true e false são palavras-chaves especiais em JS e não precisam de aspas.</td>
+                        <td>let minhaVariavel = true;</td>
                     </tr>
                     <tr>
-                        <th>Objetivo:</th>
-                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
-                        <td></td>
+                        <th>Array</th>
+                        <td>Uma estrutura que permite armazenar vários valores em uma única variável.</td>
+                        <td>let minhaVariavel = [1,'Bob','Steve',10];<br>
+                            Acesse cada item do array dessa maneira: minhaVariavel[0], minhaVariavel[1], etc.</td>
                     </tr>
                     <tr>
-                        <th>Objetivo:</th>
-                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>Objetivo:</th>
-                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
-                        <td></td>
+                        <th>Object</th>
+                        <td>Basicamente, qualquer coisa. Tudo em JavaScript é um objeto e pode ser armazenado em uma variável. Tenha isso em mente enquanto aprende.</td>
+                        <td>let minhaVariavel = document.querySelector('h1');
+                            Todos os exemplos acima também.</td>
                     </tr>
                 </tbody>
             </table>
+
+            <p>Então, por que precisamos de variáveis? Bom, variáveis são necessárias para fazer qualquer coisa interessante em programação. Se os valores não pudessem mudar, então você não poderia fazer nada dinâmico, como personalizar uma mensagem de boas-vindas, ou mudar a imagem mostrada em uma galeria de imagens.</p>
+        </section>
+        <section class="main__section" id="comentaries">
+            <a href="" class="main__h2 main__h2--hover">Comentários</a>
+            <p>Os comentários são, essencialmente, pequenos trechos de texto que podem ser adicionados entre os códigos e são ignorados pelo navegador. Você pode colocar comentários no código JavaScript, assim como em CSS:</p>
+            <div class="main__code-example">
+                /*<br>
+                Tudo no meio é um comentário.<br>
+                */
+            </div>
+            <p>Se o seu comentário não tiver quebras de linha, é mais fácil colocá-lo depois de duas barras como esta:</p>
+            <div class="main__code-example">
+                // Isto é um comentário.
+            </div>
         </section>
     </main>
 
