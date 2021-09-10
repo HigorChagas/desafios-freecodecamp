@@ -28,13 +28,13 @@
             <hr>
             <a href="#comentaries" class="navbar__link">Comentários</a>
             <hr>
-            <a href="" class="navbar__link">Lidando com textos — Strings em JavaScript</a>
+            <a href="#operators" class="navbar__link">Operadores</a>
             <hr>
-            <a href="" class="navbar__link">Métodos de String úteis</a>
+            <a href="#ifs" class="navbar__link">Condicionais</a>
             <hr>
-            <a href="" class="navbar__link">"Arrays" — Arranjos</a>
+            <a href="#functions" class="navbar__link">Funções</a>
             <hr>
-            <a href="" class="navbar__link">Tomando decisões no seu código — Condicionais</a>
+            <a href="#events" class="navbar__link">Eventos</a>
             <hr>
             <a href="" class="navbar__link">Código de repetição</a>
             <hr>
@@ -261,7 +261,7 @@
             <p>Então, por que precisamos de variáveis? Bom, variáveis são necessárias para fazer qualquer coisa interessante em programação. Se os valores não pudessem mudar, então você não poderia fazer nada dinâmico, como personalizar uma mensagem de boas-vindas, ou mudar a imagem mostrada em uma galeria de imagens.</p>
         </section>
         <section class="main__section" id="comentaries">
-            <a href="" class="main__h2 main__h2--hover">Comentários</a>
+            <a href="#comentaries" class="main__h2 main__h2--hover">Comentários</a>
             <p>Os comentários são, essencialmente, pequenos trechos de texto que podem ser adicionados entre os códigos e são ignorados pelo navegador. Você pode colocar comentários no código JavaScript, assim como em CSS:</p>
             <div class="main__code-example">
                 /*<br>
@@ -272,6 +272,128 @@
             <div class="main__code-example">
                 // Isto é um comentário.
             </div>
+        </section>
+        <section class="main__section" id="operators">
+            <a href="#operators" class="main__h2 main__h2--hover">Operadores</a>
+            <p>Um <code>operador</code> é um símbolo matemático que produz um resultado baseado em dois valores (ou variáveis). Na tabela a seguir, você pode ver alguns dos operadores mais simples, além de alguns exemplos para experimentar no console JavaScript.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operador</th>
+                        <th>Explicação</th>
+                        <th>Simbolo(s)</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Adição</th>
+                        <td>Usado para somar dois números ou juntar duas strings.</td>
+                        <td>+</td>
+                        <td>6 + 9; <br>"Ola " + "mundo!";</td>
+                    </tr>
+                    <tr>
+                        <th>Subtração, multiplição, divisão</th>
+                        <td>Fazem exatamente o que você espera que eles façam na matemática básica.</td>
+                        <td>-, *, /</td>
+                        <td>9 - 3;<br>
+                            8 * 2; // no JS a multiplicação é um asterisco<br>
+                            9 / 3;</td>
+                    </tr>
+                    <tr>
+                        <th>Atribuição</th>
+                        <td>>Você já viu essa, ela associa um valor a uma variável.</td>
+                        <td>=</td>
+                        <td>let minhaVariavel = 'Bob';</td>
+                    </tr>
+                    <tr>
+                        <th>Operador de igualdade</th>
+                        <td>Faz um teste para ver se dois valores são iguais, retornando um resultado true/false (booleano).</td>
+                        <td>===</td>
+                        <td>let minhaVAriavel = 3;<br>minhaVariavel === 4;</td>
+                    </tr>
+                    <tr>
+                        <th>Negação, não igual</th>
+                        <td>Retorna o valor lógico oposto do sinal; transforma um true em um false, etc. Quando usado junto com o operador de igualdade, o operador de negação testa se os valores são diferentes.</td>
+                        <td>!, !==</td>
+                        <td>Para "Negação", a expressão básica é true, mas a comparação retorna false porque a negamos:<br>
+                            <br>
+                            let minhaVariavel = 3;
+                            !(minhaVariavel === 3);<br>
+                            <br>
+                            "Não igual" dá basicamente o mesmo resultado com sintaxe diferente. Aqui estamos testando "é minhaVariavel NÃO é igual a 3". Isso retorna false porque minhaVariavel É igual a 3.
+                            <br><br>
+                            let minhaVariavel = 3;
+                            minhaVariavel !== 3;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Há vários outros operadores para explorar, mas por enquanto esses são suficientes.</p>
+            <div class="main__note-card">
+                <p><strong>Nota:</strong> Misturar tipos de dados pode levar a resultados estranhos quando uma operação é executada, portanto, tome cuidado para declarar suas variáveis corretamente, e você obterá os resultados esperados. Por exemplo, digite '35' + '25' no seu console. Por que você não teve o resultado esperado? Porque as aspas transformam os números em strings, você acabou concatenando strings em vez de somar os números. Se você digitar 35 + 25, você obterá o resultado correto.</p>
+            </div>
+        </section>
+        <section id="ifs" class="main__section">
+            <a href="#ifs" class="main__h2 main__h2--hover">Condicionais</a>
+            <p>Condicionais são estruturas de código que te permitem testar se uma expressão retorna verdadeiro ou não, executando um código alternativo revelado por seu resultado. Uma forma muito comum de condicional é a instrução <code>if ... else.</code> Por exemplo:</p>
+            <div class="main__code-example">
+                let sorvete = 'chocolate';<br>
+                if (sorvete === 'chocolate') {<br>
+                  alert('Opa, Eu amo sorvete de chocolate!');<br>
+                } else {<br>
+                  alert('Ahh, mas chocolate é o meu favorito...');<br>
+                }
+            </div>
+            <p>A expressão dentro do <code>if ( ... )</code> é o teste — ela usa o operador de igualdade (como descrito anteriormente) para comparar a variável <code>sorvete</code> com a string <code>chocolate</code> para ver se elas são iguais. Se essa comparação retorna <code>true</code>, o primeiro bloco de código será executado. Se a comparação não for verdadeira, o primeiro bloco de código será ignorado e o segundo bloco de código, após a instrução <code>else,</code> será executado.</p>
+        </section>
+        <section class="main__section" id="functions">
+            <a href="#functions" class="main__h2 main__h2--hover">Funções</a>
+            <p>Funções são uma maneira de encapsular funcionalidades que você deseja reutilizar. Quando você precisa de um procedimento, você pode chamar a função com um nome, em vez de reescrever o código inteiro a cada vez. Você já viu alguns usos de funções acima, por exemplo:</p>
+            <div class="main__code-example">
+                let minhaVariavel = document.querySelector('h1');
+            </div>
+            <div class="main__code-example">
+                alert('Ola!');
+            </div>
+            <p>Essas funções, <code>document.querySelector</code> e <code>alert</code> são pré-definidas nos navegadores para você usar quando quiser.</p>
+            <p>Se você ver algo que parece com um nome de variável, mas com parênteses — <code>()</code> — depois, provavelmente é uma função. Funções geralmente tem Argumentos — pedaços de dados que elas precisam para realizarem o seu trabalho. Os argumentos são colocados dentro dos parênteses e separados por vírgulas, se houver mais de um.</p>
+            <p>Por exemplo, a função <code>alert()</code> faz com que uma caixa pop-up apareça dentro da janela do navegador, mas precisamos passar uma string como argumento para dizer à função o que escrever na caixa pop-up.</p>
+            <p>A boa noticia é que você pode definir suas próprias funções — no próximo exemplo nós escrevemos uma função simples que recebe dois números como argumentos e os multiplica:</p>
+            <div class="main__code-example">
+                function multiplica (num1,num2) {<br>
+                let resultado = num1 * num2;<br>
+                return resultado;<br>
+                  }
+            </div>
+            <p>Tente executar a função acima no console e teste com vários argumentos. Por exemplo:</p>
+            <div class="main__code-example">
+                multiplica(4, 7);<br>
+                multiplica(20, 20);<br>
+                multiplica(0.5, 3);<br>
+            </div>
+            <div class="main__note-card">
+                <p><strong>Nota:</strong> A instrução <code>return</code> diz ao navegador para retornar a variável <code>resultado</code> da função para que ela esteja disponível para uso. Isso é necessário porque as variáveis definidas dentro das funções só estão disponíveis dentro destas funções. Isso é chamado Escopo de variável.</p>
+            </div>
+        </section>
+        <section id="events" class="main__section">
+            <a href="#events" class="main__h2 main__h2--hover">Eventos</a>
+            <p>Interatividade real em um site precisa de eventos. Estas são estruturas de código que percebem as coisas que acontecem no navegador, executando o código em resposta. O exemplo mais óbvio é o evento de clique, que é disparado pelo navegador quando você clica em algo com o mouse. Para demonstrar isso, insira o seguinte código no seu console e, em seguida, clique na página da Web atual:</p>
+            <div class="main__code-example">
+                document.querySelector('html').onclick = function() {<br>
+                    alert('Ai! Pare de me cutucar!');<br>
+                }
+            </div>
+            <p>Há muitas maneiras de associar um evento a um elemento. Aqui selecionamos o elemento <code><span><</span><span>html></span></code>, definindo sua propriedade <code>onclick</code> igual a uma função anônima (ou seja, sem nome), que contém o código que queremos que o evento clique execute.</p>
+            <p>Observe que:</p>
+            <div class="main__code-example">
+                document.querySelector('html').onclick = function() {};
+            </div>
+            <p>é equivalente a</p>
+            <div class="main__code-example">
+                let meuHTML = document.querySelector('html');<br>
+                meuHTML.onclick = function() {};
+            </div>
+            <p>É só uma maneira mais curta de escrever.</p>
         </section>
     </main>
 

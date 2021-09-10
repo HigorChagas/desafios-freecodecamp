@@ -5,9 +5,12 @@
     margin: 0;
     font-family: 'Zilla Slab', serif;
     scroll-behavior: smooth;
-
+    box-sizing: border-box;
 }
 
+/*****************************************/
+/* 0. Tokens
+******************************************/
 .navbar {
     position: relative;
 
@@ -105,11 +108,15 @@ ul {
     text-align: left;
     border-left: 6px solid #0072b3;
     margin: 50px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    
 }
 
 .main__note-card > p {
     font-size: 1.1rem;
     padding: 15px;
+    
 }
 
 h2 {
@@ -161,6 +168,7 @@ td {
     border-left: 6px solid #0072b3;
     letter-spacing: 2px;
     padding: 50px;
+    margin-bottom: 60px;
 }
 
 .main__code-img {
