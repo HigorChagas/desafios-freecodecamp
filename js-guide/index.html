@@ -36,21 +36,17 @@
             <hr>
             <a href="#events" class="navbar__link">Eventos</a>
             <hr>
-            <a href="" class="navbar__link">Código de repetição</a>
+            <a href="#array" class="navbar__link">Arrays</a>
             <hr>
-            <a href="" class="navbar__link">Funções — Blocos de códigos reutilizáveis</a>
+            <a href="#for" class="navbar__link">Laços de repetição</a>
             <hr>
-            <a href="" class="navbar__link">Construa sua própria função</a>
-            <hr>
-            <a href="" class="navbar__link">Retorno de valores em funções</a>
-            <hr>
-            <a href="" class="navbar__link">Introdução a eventos</a>
+            <a href="#reference" class="navbar__link">Referência</a>
             <hr>
         </div>
     </nav>
 
     <main id="main-doc" class="main">
-        <section class="main__section" id="first-steps">
+        <section class="main__section main-section" id="first-steps">
             <h1>Primeiros passos com JavaScript</h1>
             <p>
                 Em nosso primeiro módulo de JavaScript, vamos responder algumas questões fundamentais como "o que é JavaScript?", "com o que se parece?", e "o que ele pode fazer?", antes de levá-lo a sua primeira experiência em escrever JavaScript. Depois disso, vamos discutir em detalhes algumas peças chaves, como variáveis, cadeias de caracteres (strings), números (numbers) e matrizes (arrays).  
@@ -67,7 +63,7 @@
                 <p><strong>Nota:</strong> Se você está trabalhando em um computador/tablet/outro dispositivo onde você não pode criar os seus próprio arquivos, você pode experimentar (em sua maioria) os códigos de exemplo em um programa de codificação online como JSBin ou Thimble.</p>
             </div>
         </section>
-        <section class="main__section" id="what-is">
+        <section class="main__section main-section" id="what-is">
             <h2>O que é JavaScript?</h2>
             <p>Sejam bem-vindos ao curso de JavaScript para iniciantes do MDN! Neste primeiro artigo vamos fazer uma análise profunda da linguagem, respondendo questões como "O que é JavaScript?", e "O que ele faz?", para você se sentir confortável com a proposta da linguagem.</p>
             <table>
@@ -134,7 +130,7 @@
             <p class="main__player-code" id="player-code">Jogador 1: Chris</p>
             <p>Experimente clicar no botão acima para ver o que acontece.</p>
         </section>
-        <section class="main__section" id="first-dive">
+        <section class="main__section main-section" id="first-dive">
             <h2>Um primeiro mergulho no JavaScript</h2>
             <p>Agora você poderá aprender um pouco sobre a Teoria do Javascript e o que você poderá fazer com ele. Nós vamos lhe fornecer aqui um Curso rápido sobre as características básicas do JavaScript através de um tutorial completamente prático. Você irá construir um simples jogo de "Adivinhe o número", passo a passo. </p>
             <table>
@@ -184,7 +180,7 @@
                 <p><strong>Nota:</strong> Os dois recursos usados acima são partes da API do Modelo de Objeto de Documento (DOM), que permite manipular documentos.</p>
             </div>
         </section>
-        <section class="main__section" id="fundamentals">
+        <section class="main__section main-section" id="fundamentals">
             <a href="#intensive" class="main__h2 main__h2--hover" id="intesive">Curso intensivo de fundamentos da linguagem</a>
             <p>Vamos explicar alguns dos principais recursos da linguagem JavaScript, para dar a você um melhor entendimento de como tudo funciona. Vale a pena notar que esses recursos são comuns a todas as linguagens de programação, por isso, se você dominar esses fundamentos, estará no caminho certo para programar qualquer coisa!</p>
             <div class="main__note-card main__note-card--yellow"><strong>Importante:</strong>: Nesse artigo, tente escrever linhas de código de exemplo no seu console JavaScript para ver o que acontece</div>
@@ -260,7 +256,7 @@
 
             <p>Então, por que precisamos de variáveis? Bom, variáveis são necessárias para fazer qualquer coisa interessante em programação. Se os valores não pudessem mudar, então você não poderia fazer nada dinâmico, como personalizar uma mensagem de boas-vindas, ou mudar a imagem mostrada em uma galeria de imagens.</p>
         </section>
-        <section class="main__section" id="comentaries">
+        <section class="main__section main-section" id="comentaries">
             <a href="#comentaries" class="main__h2 main__h2--hover">Comentários</a>
             <p>Os comentários são, essencialmente, pequenos trechos de texto que podem ser adicionados entre os códigos e são ignorados pelo navegador. Você pode colocar comentários no código JavaScript, assim como em CSS:</p>
             <div class="main__code-example">
@@ -346,7 +342,7 @@
             </div>
             <p>A expressão dentro do <code>if ( ... )</code> é o teste — ela usa o operador de igualdade (como descrito anteriormente) para comparar a variável <code>sorvete</code> com a string <code>chocolate</code> para ver se elas são iguais. Se essa comparação retorna <code>true</code>, o primeiro bloco de código será executado. Se a comparação não for verdadeira, o primeiro bloco de código será ignorado e o segundo bloco de código, após a instrução <code>else,</code> será executado.</p>
         </section>
-        <section class="main__section" id="functions">
+        <section class="main__section main-section" id="functions">
             <a href="#functions" class="main__h2 main__h2--hover">Funções</a>
             <p>Funções são uma maneira de encapsular funcionalidades que você deseja reutilizar. Quando você precisa de um procedimento, você pode chamar a função com um nome, em vez de reescrever o código inteiro a cada vez. Você já viu alguns usos de funções acima, por exemplo:</p>
             <div class="main__code-example">
@@ -375,7 +371,7 @@
                 <p><strong>Nota:</strong> A instrução <code>return</code> diz ao navegador para retornar a variável <code>resultado</code> da função para que ela esteja disponível para uso. Isso é necessário porque as variáveis definidas dentro das funções só estão disponíveis dentro destas funções. Isso é chamado Escopo de variável.</p>
             </div>
         </section>
-        <section id="events" class="main__section">
+        <section id="events" class="main__section main-section">
             <a href="#events" class="main__h2 main__h2--hover">Eventos</a>
             <p>Interatividade real em um site precisa de eventos. Estas são estruturas de código que percebem as coisas que acontecem no navegador, executando o código em resposta. O exemplo mais óbvio é o evento de clique, que é disparado pelo navegador quando você clica em algo com o mouse. Para demonstrar isso, insira o seguinte código no seu console e, em seguida, clique na página da Web atual:</p>
             <div class="main__code-example">
@@ -394,6 +390,60 @@
                 meuHTML.onclick = function() {};
             </div>
             <p>É só uma maneira mais curta de escrever.</p>
+        </section>
+        <section id="array" class="main__section main-section">
+            <h2>Arrays</h2>
+            <a href="#array" class="main__h2 main__h2--hover">O que é uma array?</a>
+            <p>Arrays são geralmente descritas como "lista de objetos"; elas são basicamente objetos que contem múltiplos valores armazenados em uma lista. Um objeto array pode ser armazenado em variáveis e ser tratado de forma muito similar a qualquer outro tipo de valor, a diferença está em podermos acessar cada valor dentro da lista individualmente, e fazer super úteis e eficientes coisas com a lista, como laço através da lista e fazer a mesma coisa para cada valor. Talvez nós pegamos uma série de produtos e seus preços armazenados em uma array, e nós queremos fazer um laço através de todos eles e mostrar em um recibo, enquanto somamos todos os preços e mostramos o preço total ao final.</p>
+            <p>Se nós não tivessemos arrays, teríamos que armazenar cada item em uma variável separada, então chamar o código para mostrar e adicionar separadamente cada item. Isto seria muito mais longo de escrever, menos eficiente e mais suscetível a erros. Se nós temos 10 itens para adicionar na fatura, isto é ruim o bastante, mas e se fosse 100 itens ou 1000? Nós vamos retornar a este exemplo mais tarde neste artigo.</p>
+            <a href="#array" class="main__h2 main__h2--hover">Criando um array</a>
+            <p>Arrays são contruídas de colchetes, os quais contém uma lista de itens separada por vírgulas.</p>
+            <ol>
+                <li>Vamos supor que queremos armazenar uma lista de compras em uma array — nós temos algo como o seguinte. Digite as linhas abaixo no seu console: </li>
+            </ol>
+            <div class="main__code-example">
+                var shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];<br />
+                shopping;
+            </div>
+            <ol>
+                <li>Neste caso, cada item na array é uma string, mas tenha em mente que você pode armazenar qualquer item em uma array — string, número, objeto, outra variável, até outra array. Você pode também misturar e combinar tipos de itens — eles não têm que ser todos números, strings, etc. Tente isto: </li>
+            </ol>
+            <div class="main__code-example">
+                var sequence = [1, 1, 2, 3, 5, 8, 13];<br />
+                var random = ['tree', 795, [0, 1, 2]]; 
+            </div>
+            <ol>
+                <li>Tente criar um par de arrays você mesmo.</li>
+            </ol>
+        </section>
+        <section id="for" class="main__section main-section">
+            <a href="" class="main__h2 main__h2--hover">Mantenha-me no loop(laço)</a>
+            <p>Loops, loops, loops. Além de estarem associados a populares cereais matinais, montanhas-russas e produção musical, eles também são um conceito importante na programação. O loop de programação é como fazer a mesma coisa repetidas vezes - o que é chamado de <strong>iteração</strong> na linguagem de programação.</p>
+            <p>Vamos considerar o caso de um agricultor que quer se certificar de que ele terá comida suficiente para alimentar sua família durante a semana. Ele pode usar o seguinte loop para conseguir isso:</p>
+            <img src="img/loop_js-02-farm.png" alt="Imagem ilustrando os laços de repetição" class="main__code-img">
+            <p>Um loop geralmente possui um ou mais dos seguintes itens:</p>
+            <ul>
+                <li>O <strong>contador</strong>, que é inicializado com um certo valor - este é o ponto inicial do loop ("Iniciar: não tenho comida", figura acima).</li>
+                <li>A <strong>condição de saída</strong>, que é o critério no qual o loop pára - geralmente o contador atinge um certo valor. Isso é ilustrado por "Tenho comida suficiente?",  na figura acima. Vamos dizer que ele precisa de 10 porções de comida para alimentar sua família.</li>
+                <li>Um <strong>iterador</strong>, que geralmente incrementa o contador em uma pequena quantidade a cada loop, sucessivamente, até atingir a condição de saída. Nós não ilustramos explicitamente isso acima, mas poderíamos pensar sobre o agricultor ser capaz de coletar 2 porções de comida por hora. Depois de cada hora, a quantidade de comida que ele coletou é incrementada em dois, e ele verifica se ele tem comida suficiente. Se ele atingiu 10 porções (a condição de saída), ele pode parar de coletar e ir para casa.</li>
+            </ul>
+            <p>No seu pseudocode (en-US), isso seria algo como o seguinte:</p>
+            <div class="main__code-example">
+                loop(food = 0; foodNeeded = 10) { <br />
+                    if (food = foodNeeded) {<br />
+                      exit loop;<br />
+                      // Nós temos comida o suficiente, Vamos para casa<br />
+                    } else {<br />
+                      food += 2; // Passe uma hora coletando mais 2 alimentos(food)<br />
+                      // loop será executado novamente<br />
+                    }<br />
+                  }
+            </div>
+            <p>Assim, a quantidade de comida necessária é fixada em 10, e o montante que o agricultor tem atualmente é fixado em 0. Em cada iteração do ciclo, verificamos se a quantidade de alimento que o agricultor tem é igual à quantidade que ele precisa. Se assim for, podemos sair do loop. Se não, o agricultor gasta mais uma hora coletando duas porções de comida, e o laço é executado novamente.</p>
+        </section>
+        <section class="main__section" id="reference">
+            <header class="main__h2 main__h2--hover">Referência</header>
+            <p style="text-align: center;">Todas as referências dessa documentação foram retiradas do site da <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">MDN</a></p>
         </section>
     </main>
 

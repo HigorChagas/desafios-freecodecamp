@@ -98,8 +98,12 @@ h1 {
     text-decoration: none;
 }
 
-ul {
+ul, ol {
     padding-left: 87px;
+}
+
+li {
+    margin: 15px;
 }
 
 .main__note-card {
@@ -168,7 +172,8 @@ td {
     border-left: 6px solid #0072b3;
     letter-spacing: 2px;
     padding: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .main__code-img {
