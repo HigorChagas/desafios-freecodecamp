@@ -14,448 +14,76 @@
             <header>Documentação JS</header>
         </div>
         <div class="navbar__container">
-            <div class="navbar__vertical-line"></div>
             <hr>
-            <a href="#Introducao" class="navbar__link">Introdução</a>
+            <a href="#Introducao" class="nav-link">Introdução</a>
             <hr>
-            <a href="#JavaScript?" class="navbar__link">JavaScript?</a>
+            <a href="#O_que_voce_ja_deve_saber" class="nav-link">O que você já deve saber</a>
             <hr>
-            <a href="#Primeiros_passos" class="navbar__link">Primeiro mergulho</a>
+            <a href="#" class="nav-link">JavaScript e Java</a>
             <hr>
-            <a href="#Fundamentos" class="navbar__link">Fundamentos</a>
+            <a href="#" class="nav-link">Hello World!</a>
             <hr>
-            <a href="#Comentarios" class="navbar__link">Comentários</a>
+            <a href="#" class="nav-link">Variáveis</a>
             <hr>
-            <a href="#Operadores" class="navbar__link">Operadores</a>
+            <a href="#" class="nav-link">Declarando variáveis</a>
             <hr>
-            <a href="#Condicionais" class="navbar__link">Condicionais</a>
+            <a href="#" class="nav-link">Escopo de variáveis</a>
             <hr>
-            <a href="#Funcoes" class="navbar__link">Funções</a>
+            <a href="#" class="nav-link">Variáveis globais</a>
             <hr>
-            <a href="#Eventos" class="navbar__link">Eventos</a>
+            <a href="#" class="nav-link">Contantes</a>
             <hr>
-            <a href="#Arrays" class="navbar__link">Arrays</a>
+            <a href="#" class="nav-link">Tipos de dados</a>
             <hr>
-            <a href="#Loop" class="navbar__link">Laços de repetição</a>
+            <a href="#" class="nav-link">Condição if...else</a>
             <hr>
-            <a href="#Referencias" class="navbar__link">Referência</a>
+            <a href="#" class="nav-link">Condição while</a>
             <hr>
+            <a href="#" class="nav-link">Declaração de funções</a>
+            <hr>
+            <a href="#" class="nav-link">Referência</a>
         </div>
     </nav>
 
-    <main id="main-doc" class="main">
+    <main id="main-doc">
         <section class="main-section" id="Introducao">
             <header>Introdução</header>
             <p>
-                Em nosso primeiro módulo de JavaScript, vamos responder algumas questões fundamentais como "o que é JavaScript?", "com o que se parece?", e "o que ele pode fazer?", antes de levá-lo a sua primeira experiência em escrever JavaScript. Depois disso, vamos discutir em detalhes algumas peças chaves, como variáveis, cadeias de caracteres (strings), números (numbers) e matrizes (arrays).  
+                JavaScript é uma linguagem de script de plataforma cruzada orientada a objetos. É uma linguagem pequena e leve. Dentro de um ambiente host (por exemplo, um navegador da web), o JavaScript pode ser conectado aos objetos de seu ambiente para fornecer controle programático sobre eles.
             </p>
-            <a href="#" class="main__h2 main__h2--hover">Pré-requisitos</a>
-            <p>Antes de iniciar esse módulo, você não precisa de nenhum conhecimento prévio de JavaScript, mas você deve ter alguma familiaridade com HTML e CSS. Te recomendamos a estudar os seguintes módulos antes de começar com o JavaScript:</p>
+
+            <p>
+                JavaScript contém uma biblioteca padrão de objetos, como Array, Date e Math, e um conjunto básico de elementos de linguagem, como operadores, estruturas de controle e instruções. O JavaScript básico pode ser estendido para uma variedade de propósitos, complementando-o com objetos adicionais; por exemplo:
+            </p>
+
             <ul>
-                <li><a href="" class="main__tutorial-link main__tutorial-link--hover">Iniciando com a Web</a></li>
-                <li><a href="" class="main__tutorial-link main__tutorial-link--hover">Introdução ao HTML</a></li>
-                <li><a href="" class="main__tutorial-link main__tutorial-link--hover">Introdução ao CSS</a></li>
+                <li>
+                    O JavaScript do lado do cliente estende a linguagem central, fornecendo objetos para controlar um navegador e seu Document Object Model (DOM). Por exemplo, as extensões do lado do cliente permitem que um aplicativo coloque elementos em um formulário HTML e responda a eventos do usuário, como cliques do mouse, entrada de formulário e navegação de página.
+                </li>
+                <li>
+                    O JavaScript do lado do servidor estende a linguagem central, fornecendo objetos relevantes para a execução de JavaScript em um servidor. Por exemplo, as extensões do lado do servidor permitem que um aplicativo se comunique com um banco de dados, forneça continuidade de informações de uma chamada para outra do aplicativo ou execute manipulações de arquivo em um servidor.
+                </li>
             </ul>
-
-            <div class="main__note-card">
-                <p><strong>Nota:</strong> Se você está trabalhando em um computador/tablet/outro dispositivo onde você não pode criar os seus próprio arquivos, você pode experimentar (em sua maioria) os códigos de exemplo em um programa de codificação online como JSBin ou Thimble.</p>
-            </div>
         </section>
-        <section class="main-section" id="JavaScript?">
-            <header>JavaScript?</header>
-            <p>Sejam bem-vindos ao curso de JavaScript para iniciantes do MDN! Neste primeiro artigo vamos fazer uma análise profunda da linguagem, respondendo questões como "O que é JavaScript?", e "O que ele faz?", para você se sentir confortável com a proposta da linguagem.</p>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>Pré requisitos:</th>
-                        <td>Interação básica com o computador, entendimento básico de HTML e CSS.</td>
-                    </tr>
-                    <tr>
-                        <th>Objetivo:</th>
-                        <td>Se familiarizar com a linguagem, com o que ela pode fazer, e como tudo isso pode ser utilizado em um website.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="#" class="main__h2 main__h2--hover">Definição de alto nível</a>
-            <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc. — você pode apostar que o JavaScript provavelmente está envolvido. É a terceira camada do bolo das tecnologias padrões da web, duas das quais (HTML e CSS) nós falamos com muito mais detalhes em outras partes da Área de Aprendizado.</p>
-            <img class="main__img" src="/img/cake.png" alt="Imagem ilustrando as 3 principais técnologias do Front-end">
+
+        <section class="main-section" id="O_que_voce_ja_deve_saber">
+            <header>O que você já deve saber</header>
+            <p>Este guia pressupõe que você tenha os seguintes conhecimentos básicos:</p>
             <ul>
-                <li class="main__language-definition"><strong>HTML</strong> é a linguagem de marcação que nós usamos para estruturar e dar significado para o nosso conteúdo web. Por exemplo, definindo parágrafos, cabeçalhos, tabelas de conteúdo, ou inserindo imagens e vídeos na página.</li>
-                <li class="main__language-definition"><strong>CSS</strong> é uma linguagem de regras de estilo que nós usamos para aplicar estilo ao nosso conteúdo HTML. Por exemplo, definindo cores de fundo e fontes, e posicionando nosso conteúdo em múltiplas colunas.</li>
-                <li class="main__language-definition"><strong>JavScript</strong> é uma linguagem de programação que permite a você criar conteúdo que se atualiza dinamicamente, controlar múltimídias, imagens animadas, e tudo o mais que há de intessante. Ok, não tudo, mas é maravilhoso o que você pode efetuar com algumas linhas de código JavaScript.</li>
+                <li>Um entendimento geral sobre a Internet e a World Wide Web (WWW)</li>
+                <li>Bons conhecimentos de HyperText Markup Language (HTML)</li>
+                <li>Alguma experiência em programação. Se você é novo(a) em programação, tente um dos tutoriais com links na página principal sobre JavaScript</li>
             </ul>
-            <p>As três camadas ficam muito bem uma em cima da outra. Vamos exemplificar com um simples bloco de texto. Nós podemos marcá-lo usando HTML para dar estrutura e propósito: </p>
+        </section>
 
-            <div class="main__code-example">
-                    <code><span><</span>p<span>></span> Jogador 1: Chris <span><</span>p<span>></span></code>
-            </div>
-            <img class="main__code-img" src="img/just-html.png" alt="Exemplo do código acima">
-            <p>Nós podemos adicionar um pouco de CSS na mistura, para deixar nosso parágrafo um pouco mais atraente:</p>
-            <div class="main__code-example">
-                <code>
-                    <p  class="main__code-block">p { <br>
-                        font-family: 'helvetica neue', helvetica, sans-serif;
-                        <br>letter-spacing: 1px;
-                        <br>text-transform: uppercase;
-                        <br>text-align: center;
-                        <br>border: 2px solid rgba(0,0,200,0.6);
-                        <br>background: rgba(0,0,200,0.3);
-                        <br>color: rgba(0,0,200,0.6);
-                        <br>box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
-                        <br>border-radius: 10px;
-                        <br>padding: 3px 10px;
-                        <br>display: inline-block;
-                        <br>cursor:pointer;<br>
-                      }
-                    </p>
-                </code>
-            </div>
-            <img src="img/html-and-css.png" alt="Exemplo do mesmo código acima mas com CSS" class="main__code-img">
-            <p>E finalmente, nós podemos adicionar JavaScript para implementar um comportamento dinâmico:</p>
-            <div class="main__code-example">
-                <code>
-                    <p>const para = document.querySelector('p');
-                        <br><br>
-                        para.addEventListener('click', atualizarNome);
-                        <br><br>
-                        function atualizarNome() {
-                          var nome = prompt('Insira um novo nome');
-                          para.textContent = 'Jogador 1: ' + nome;<br>
-                        }
-                    </p>
-                </code>
-            </div>
-            <p class="main__player-code" id="player-code">Jogador 1: Chris</p>
-            <p>Experimente clicar no botão acima para ver o que acontece.</p>
+        <section class="main-section" id="JavaScript_e_Java">
+            <header>JavaScript e Java</header>
+            <p>
+                JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferentes em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem tipagem estática e verificação de tipo forte de Java. JavaScript segue a maior parte da sintaxe de expressão Java, convenções de nomenclatura e construções básicas de fluxo de controle, razão pela qual foi renomeado de LiveScript para JavaScript.
+            </p>
         </section>
-        <section class="main-section" id="Primeiros_passos">
-            <header>Primeiros Passos</header>
-            <p>Agora você poderá aprender um pouco sobre a Teoria do Javascript e o que você poderá fazer com ele. Nós vamos lhe fornecer aqui um Curso rápido sobre as características básicas do JavaScript através de um tutorial completamente prático. Você irá construir um simples jogo de "Adivinhe o número", passo a passo. </p>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>Pré requisitos:</th>
-                        <td>Conhecimentos básicos de informática, uma compreensão básica de HTML e CSS, uma compreensão do que é JavaScript.</td>
-                    </tr>
-                    <tr>
-                        <th>Objetivo:</th>
-                        <td>Ter um primeiro bit de experiência em escrever um pouco de  JavaScript, e adquirir  pelo menos uma compreensão básica do que envolve escrever um programa em JavaScript.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Nós não esperamos que você entenda todo o código imediatamente - Apenas queremos ensinar-lhe os melhores conceitos por enquanto e dar a você uma idéia de como o JavaScript (e outras linguagens de programação) funcionam. Em artigos posteriores você vai rever todos esses recursos com muito mais detalhes!</p>
-            <div class="main__note-card">
-                <p><strong>Nota:</strong> Muitos dos recursos de código que você verá no JavaScript são iguais aos de outra linguagem de programação - funções, loops, etc. A sintaxe do código parece diferente, mas os conceitos ainda são praticamente os mesmos.</p>
-            </div>
-            <a href="#" class="main__h2 main__h2--hover">Pensando como um Programador</a>
-            <p>Uma das coisas mais difíceis de aprender na programação não é a sintaxe que você precisa aprender, mas como aplicá-la para resolver problemas do mundo real. Você precisa começar a pensar como um programador - isso geralmente envolve olhar para as descrições do que seu programa precisa fazer e analisar como eles podem ser aplicados na solução real (prática), quais recursos de código são necessários para alcançar esse objetivo, e como fazê-los trabalhar em conjunto.</p>
-            <p>Isso requer um mistura de trabalho duro, experiência com a sintaxe de programação utilizada e prática, além de um pouco de criatividade, é claro. Quanto mais você programa, melhor programador se torna. Nós não prometemos transformar seu cérebro em um "cérebro de programador" em 5 minutos, mas vamos te dar todas as oportunidades para pensar na prática como um programador ao longo deste curso. </p>
-
-            <a href="#" class="main__h2 main__h2--hover">Um exemplo "Olá mundo"</a>
-            <p>A seção acima pode parecer realmente empolgante, e assim deve ser  — o JavaScript é uma das tecnologias mais ativas da Web e, à medida que você começa a usá-lo bem, seus sites entrarão em uma nova dimensão de poder e criatividade.</p>
-            <p>No entanto, ficar confortável com o JavaScript é um pouco mais difícil do que ficar confortável com HTML e CSS. Você pode ter que começar pequeno e continuar trabalhando em pequenos passos consistentes. Para começar, mostraremos como adicionar alguns JavaScript básicos à sua página, criando um exemplo de "Olá mundo!"</p>
-            <div class="main__note-card main__note-card--yellow">
-                <p><strong>Importante:</strong> Antes de prosseguir com o conteúdo a seguir, leia todos os tópicos acima.</p>
-            </div>
-            <p>Primeiro, vá para o seu site de teste e crie uma nova pasta chamada <code>scripts.</code> Em seguida, dentro da nova pasta de scripts que você acabou de criar, crie um novo arquivo chamado <code>main.js</code>. Salve na sua pasta de <code>scripts.</code></p>
-            <p>Em seguida, no seu arquivo <code>index.html</code>, insira o seguinte elemento em uma nova linha logo antes da tag de fechamento <code><span><</span><span>/</span>body<span>></span></code>: </p>
-            <div class="main__note-card">
-                <p><span><</span>script src="scripts/main.js"><span><span><</span>/</span>script></p>
-            </div>
-            <div class="main__note-card">
-                <p>const meuCabecalho = document.querySelector('h1');<br>
-                    meuCabecalho.textContent = 'Ola mundo!';</p>
-            </div>
-            <p>Por fim, verifique se os arquivos HTML e Javascript estão salvos e, em seguida, carregue o <code>index.html</code> no navegador. Você deve ver algo do tipo:</p>
-            <img src="img/hello-world.png" alt="Imagem mostrando o exemplho Hello World feito acima." class="main__code-img">
-            <div class="main__note-card">
-                <p>Nota: A razão pela qual colocamos o elemento <code></code><span><span><</span>/</span>script> perto da parte inferior do arquivo HTML, é que o HTML é carregado pelo navegador na ordem em que ele aparece no arquivo. Se o JavaScript é carregado primeiro ele pode afetar o HTML abaixo dele, mas as vezes isso pode não funcionar, já que o JavaScript seria carregado antes do HTML em que ele deveria trabalhar. Portanto, colocar o JavaScript próximo à parte inferior da página HTML geralmente é um meio de corrigir isto</p>
-            </div>
-            <a href="#" class="main__h2 main__h2--hover">O que aconteceu?</a>
-            <p>Seu texto de título foi alterado para "Hello world!" usando JavaScript. Você fez isso primeiro usando uma função chamada <code>querySelector()</code> para obter uma referência ao título e armazená-lo em uma variável chamada meuCabecalho. Isso é muito parecido ao que fizemos usando seletores CSS. Quando queremos fazer algo em um elemento, primeiro você precisa selecioná-lo.</p>
-            <p>Depois disso, você define o valor da propriedade <code>textContent</code> para "Hello world!", na variável <code>meuCabecalho</code> (que representa o conteúdo do título).</p>
-            <div class="main__note-card">
-                <p><strong>Nota:</strong> Os dois recursos usados acima são partes da API do Modelo de Objeto de Documento (DOM), que permite manipular documentos.</p>
-            </div>
-        </section>
-        <section class="main-section" id="Fundamentos">
-            <header>Fundamentos</header>
-            <a href="#intensive" class="main__h2 main__h2--hover" id="intesive">Curso intensivo de fundamentos da linguagem</a>
-            <p>Vamos explicar alguns dos principais recursos da linguagem JavaScript, para dar a você um melhor entendimento de como tudo funciona. Vale a pena notar que esses recursos são comuns a todas as linguagens de programação, por isso, se você dominar esses fundamentos, estará no caminho certo para programar qualquer coisa!</p>
-            <div class="main__note-card main__note-card--yellow"><strong>Importante:</strong>: Nesse artigo, tente escrever linhas de código de exemplo no seu console JavaScript para ver o que acontece</div>
-            <a href="#variables" class="main__h2 main__h2--hover" id="variables">Variáveis</a>
-            <p>Variáveis são espaços na memória do computador onde você pode armazenar dados. Você começa declarando uma variável com a palavra-chave <code>var</code> (menos recomendado, se aprofunde mais para uma explicação) ou a palavra chave <code>let</code>, seguida por qualquer nome que você queira chamá-la:</p>
-            <div class="main__code-example">
-                <p>let minhaVariavel;</p>
-            </div>
-            <div class="main__note-card">
-                <p><strong>Nota:</strong> Ponto-e-vírgula no fim de uma linha indica onde uma instrução termina; só é absolutamente necessário quando você precisa separar instruções em uma única linha. No entanto, algumas pessoas acreditam que é uma boa prática colocá-las no final de cada instrução.</p>
-            </div>
-            <div class="main__note-card">
-                <p><strong>Nota:</strong> Você pode dar quase qualquer nome a uma variável, mas há algumas restrições</p>
-            </div>
-            <div class="main__note-card">
-                <p>Nota: JavaScript é case sensitive — <code>minhaVariavel</code> é  diferente de <code>minhavariavel</code>. Se você estiver tendo problemas no seu código, cheque seu casing!</p>
-            </div>
-            <p>Depois de declarar uma variável, você pode dar a ela um valor:</p>
-            <div class="main__code-example">
-                minhaVariavel = 'Bob';
-            </div>
-            <p>Você pode fazer as duas operações na mesma linha se você quiser:</p>
-            <div class="main__code-example">
-                let minhaVariavel = 'Bob';
-            </div>
-            <p>Você pode retornar o valor chamando a variável pelo nome:</p>
-            <div class="main__code-example">
-                minhaVariavel;
-            </div>
-            <p>Depois de dar à variável um valor, você pode mudá-lo:</p>
-            <div class="main__code-example">
-                let minhaVAriavel = 'Bob';<br>
-                minhaVariavel = 'Steve';
-            </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Variável</th>
-                        <th>Explicação</th>
-                        <th>Exemplo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>String</th>
-                        <td>Uma sequência de texto é conhecida como uma string. Para mostrar que o valor é uma string, você deve envolvê-la em aspas.</td>
-                        <td>let minhaVariavel = 'Bob';</td>
-                    </tr>
-                    <tr>
-                        <th>Number</th>
-                        <td>Um número. Números não tem aspas ao redor deles.</td>
-                        <td>let minhaVariavel = 10;</td>
-                    </tr>
-                    <tr>
-                        <th>Boolean</th>
-                        <td>>Um valor verdadeiro ou falso. As palavras true e false são palavras-chaves especiais em JS e não precisam de aspas.</td>
-                        <td>let minhaVariavel = true;</td>
-                    </tr>
-                    <tr>
-                        <th>Array</th>
-                        <td>Uma estrutura que permite armazenar vários valores em uma única variável.</td>
-                        <td>let minhaVariavel = [1,'Bob','Steve',10];<br>
-                            Acesse cada item do array dessa maneira: minhaVariavel[0], minhaVariavel[1], etc.</td>
-                    </tr>
-                    <tr>
-                        <th>Object</th>
-                        <td>Basicamente, qualquer coisa. Tudo em JavaScript é um objeto e pode ser armazenado em uma variável. Tenha isso em mente enquanto aprende.</td>
-                        <td>let minhaVariavel = document.querySelector('h1');
-                            Todos os exemplos acima também.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <p>Então, por que precisamos de variáveis? Bom, variáveis são necessárias para fazer qualquer coisa interessante em programação. Se os valores não pudessem mudar, então você não poderia fazer nada dinâmico, como personalizar uma mensagem de boas-vindas, ou mudar a imagem mostrada em uma galeria de imagens.</p>
-        </section>
-        <section class="main-section" id="Comentarios">
-            <header>Comentários</header>
-            <p>Os comentários são, essencialmente, pequenos trechos de texto que podem ser adicionados entre os códigos e são ignorados pelo navegador. Você pode colocar comentários no código JavaScript, assim como em CSS:</p>
-            <div class="main__code-example">
-                /*<br>
-                Tudo no meio é um comentário.<br>
-                */
-            </div>
-            <p>Se o seu comentário não tiver quebras de linha, é mais fácil colocá-lo depois de duas barras como esta:</p>
-            <div class="main__code-example">
-                // Isto é um comentário.
-            </div>
-        </section>
-        <section class="main-section" id="Operadores">
-            <header>Operadores</header>
-            <p>Um <code>operador</code> é um símbolo matemático que produz um resultado baseado em dois valores (ou variáveis). Na tabela a seguir, você pode ver alguns dos operadores mais simples, além de alguns exemplos para experimentar no console JavaScript.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Operador</th>
-                        <th>Explicação</th>
-                        <th>Simbolo(s)</th>
-                        <th>Exemplo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Adição</th>
-                        <td>Usado para somar dois números ou juntar duas strings.</td>
-                        <td>+</td>
-                        <td>6 + 9; <br>"Ola " + "mundo!";</td>
-                    </tr>
-                    <tr>
-                        <th>Subtração, multiplição, divisão</th>
-                        <td>Fazem exatamente o que você espera que eles façam na matemática básica.</td>
-                        <td>-, *, /</td>
-                        <td>9 - 3;<br>
-                            8 * 2; // no JS a multiplicação é um asterisco<br>
-                            9 / 3;</td>
-                    </tr>
-                    <tr>
-                        <th>Atribuição</th>
-                        <td>>Você já viu essa, ela associa um valor a uma variável.</td>
-                        <td>=</td>
-                        <td>let minhaVariavel = 'Bob';</td>
-                    </tr>
-                    <tr>
-                        <th>Operador de igualdade</th>
-                        <td>Faz um teste para ver se dois valores são iguais, retornando um resultado true/false (booleano).</td>
-                        <td>===</td>
-                        <td>let minhaVAriavel = 3;<br>minhaVariavel === 4;</td>
-                    </tr>
-                    <tr>
-                        <th>Negação, não igual</th>
-                        <td>Retorna o valor lógico oposto do sinal; transforma um true em um false, etc. Quando usado junto com o operador de igualdade, o operador de negação testa se os valores são diferentes.</td>
-                        <td>!, !==</td>
-                        <td>Para "Negação", a expressão básica é true, mas a comparação retorna false porque a negamos:<br>
-                            <br>
-                            let minhaVariavel = 3;
-                            !(minhaVariavel === 3);<br>
-                            <br>
-                            "Não igual" dá basicamente o mesmo resultado com sintaxe diferente. Aqui estamos testando "é minhaVariavel NÃO é igual a 3". Isso retorna false porque minhaVariavel É igual a 3.
-                            <br><br>
-                            let minhaVariavel = 3;
-                            minhaVariavel !== 3;</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Há vários outros operadores para explorar, mas por enquanto esses são suficientes.</p>
-            <div class="main__note-card">
-                <p><strong>Nota:</strong> Misturar tipos de dados pode levar a resultados estranhos quando uma operação é executada, portanto, tome cuidado para declarar suas variáveis corretamente, e você obterá os resultados esperados. Por exemplo, digite '35' + '25' no seu console. Por que você não teve o resultado esperado? Porque as aspas transformam os números em strings, você acabou concatenando strings em vez de somar os números. Se você digitar 35 + 25, você obterá o resultado correto.</p>
-            </div>
-        </section>
-        <section id="Condicionais" class="main-section">
-            <header>Condicionais</header>
-            <p>Condicionais são estruturas de código que te permitem testar se uma expressão retorna verdadeiro ou não, executando um código alternativo revelado por seu resultado. Uma forma muito comum de condicional é a instrução <code>if ... else.</code> Por exemplo:</p>
-            <div class="main__code-example">
-                let sorvete = 'chocolate';<br>
-                if (sorvete === 'chocolate') {<br>
-                  alert('Opa, Eu amo sorvete de chocolate!');<br>
-                } else {<br>
-                  alert('Ahh, mas chocolate é o meu favorito...');<br>
-                }
-            </div>
-            <p>A expressão dentro do <code>if ( ... )</code> é o teste — ela usa o operador de igualdade (como descrito anteriormente) para comparar a variável <code>sorvete</code> com a string <code>chocolate</code> para ver se elas são iguais. Se essa comparação retorna <code>true</code>, o primeiro bloco de código será executado. Se a comparação não for verdadeira, o primeiro bloco de código será ignorado e o segundo bloco de código, após a instrução <code>else,</code> será executado.</p>
-        </section>
-        <section class="main-section" id="Funcoes">
-            <header>Funções</header>
-            <p>Funções são uma maneira de encapsular funcionalidades que você deseja reutilizar. Quando você precisa de um procedimento, você pode chamar a função com um nome, em vez de reescrever o código inteiro a cada vez. Você já viu alguns usos de funções acima, por exemplo:</p>
-            <div class="main__code-example">
-                let minhaVariavel = document.querySelector('h1');
-            </div>
-            <div class="main__code-example">
-                alert('Ola!');
-            </div>
-            <p>Essas funções, <code>document.querySelector</code> e <code>alert</code> são pré-definidas nos navegadores para você usar quando quiser.</p>
-            <p>Se você ver algo que parece com um nome de variável, mas com parênteses — <code>()</code> — depois, provavelmente é uma função. Funções geralmente tem Argumentos — pedaços de dados que elas precisam para realizarem o seu trabalho. Os argumentos são colocados dentro dos parênteses e separados por vírgulas, se houver mais de um.</p>
-            <p>Por exemplo, a função <code>alert()</code> faz com que uma caixa pop-up apareça dentro da janela do navegador, mas precisamos passar uma string como argumento para dizer à função o que escrever na caixa pop-up.</p>
-            <p>A boa noticia é que você pode definir suas próprias funções — no próximo exemplo nós escrevemos uma função simples que recebe dois números como argumentos e os multiplica:</p>
-            <div class="main__code-example">
-                function multiplica (num1,num2) {<br>
-                let resultado = num1 * num2;<br>
-                return resultado;<br>
-                  }
-            </div>
-            <p>Tente executar a função acima no console e teste com vários argumentos. Por exemplo:</p>
-            <div class="main__code-example">
-                multiplica(4, 7);<br>
-                multiplica(20, 20);<br>
-                multiplica(0.5, 3);<br>
-            </div>
-            <div class="main__note-card">
-                <p><strong>Nota:</strong> A instrução <code>return</code> diz ao navegador para retornar a variável <code>resultado</code> da função para que ela esteja disponível para uso. Isso é necessário porque as variáveis definidas dentro das funções só estão disponíveis dentro destas funções. Isso é chamado Escopo de variável.</p>
-            </div>
-        </section>
-        <section id="Eventos" class="main-section">
-            <header>Eventos</header>
-            <p>Interatividade real em um site precisa de eventos. Estas são estruturas de código que percebem as coisas que acontecem no navegador, executando o código em resposta. O exemplo mais óbvio é o evento de clique, que é disparado pelo navegador quando você clica em algo com o mouse. Para demonstrar isso, insira o seguinte código no seu console e, em seguida, clique na página da Web atual:</p>
-            <div class="main__code-example">
-                document.querySelector('html').onclick = function() {<br>
-                    alert('Ai! Pare de me cutucar!');<br>
-                }
-            </div>
-            <p>Há muitas maneiras de associar um evento a um elemento. Aqui selecionamos o elemento <code><span><</span><span>html></span></code>, definindo sua propriedade <code>onclick</code> igual a uma função anônima (ou seja, sem nome), que contém o código que queremos que o evento clique execute.</p>
-            <p>Observe que:</p>
-            <div class="main__code-example">
-                document.querySelector('html').onclick = function() {};
-            </div>
-            <p>é equivalente a</p>
-            <div class="main__code-example">
-                let meuHTML = document.querySelector('html');<br>
-                meuHTML.onclick = function() {};
-            </div>
-            <p>É só uma maneira mais curta de escrever.</p>
-        </section>
-        <section id="Arrays" class="main-section">
-            <header>Arrays</header>
-            <a href="#array" class="main__h2 main__h2--hover">O que é uma array?</a>
-            <p>Arrays são geralmente descritas como "lista de objetos"; elas são basicamente objetos que contem múltiplos valores armazenados em uma lista. Um objeto array pode ser armazenado em variáveis e ser tratado de forma muito similar a qualquer outro tipo de valor, a diferença está em podermos acessar cada valor dentro da lista individualmente, e fazer super úteis e eficientes coisas com a lista, como laço através da lista e fazer a mesma coisa para cada valor. Talvez nós pegamos uma série de produtos e seus preços armazenados em uma array, e nós queremos fazer um laço através de todos eles e mostrar em um recibo, enquanto somamos todos os preços e mostramos o preço total ao final.</p>
-            <p>Se nós não tivessemos arrays, teríamos que armazenar cada item em uma variável separada, então chamar o código para mostrar e adicionar separadamente cada item. Isto seria muito mais longo de escrever, menos eficiente e mais suscetível a erros. Se nós temos 10 itens para adicionar na fatura, isto é ruim o bastante, mas e se fosse 100 itens ou 1000? Nós vamos retornar a este exemplo mais tarde neste artigo.</p>
-            <a href="#array" class="main__h2 main__h2--hover">Criando um array</a>
-            <p>Arrays são contruídas de colchetes, os quais contém uma lista de itens separada por vírgulas.</p>
-            <ol>
-                <li>Vamos supor que queremos armazenar uma lista de compras em uma array — nós temos algo como o seguinte. Digite as linhas abaixo no seu console: </li>
-            </ol>
-            <div class="main__code-example">
-                var shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];<br />
-                shopping;
-            </div>
-            <ol>
-                <li>Neste caso, cada item na array é uma string, mas tenha em mente que você pode armazenar qualquer item em uma array — string, número, objeto, outra variável, até outra array. Você pode também misturar e combinar tipos de itens — eles não têm que ser todos números, strings, etc. Tente isto: </li>
-            </ol>
-            <div class="main__code-example">
-                var sequence = [1, 1, 2, 3, 5, 8, 13];<br />
-                var random = ['tree', 795, [0, 1, 2]]; 
-            </div>
-            <ol>
-                <li>Tente criar um par de arrays você mesmo.</li>
-            </ol>
-        </section>
-        <section id="Loop" class="main-section">
-            <header>Loop</header>
-            <p>Loops, loops, loops. Além de estarem associados a populares cereais matinais, montanhas-russas e produção musical, eles também são um conceito importante na programação. O loop de programação é como fazer a mesma coisa repetidas vezes - o que é chamado de <strong>iteração</strong> na linguagem de programação.</p>
-            <p>Vamos considerar o caso de um agricultor que quer se certificar de que ele terá comida suficiente para alimentar sua família durante a semana. Ele pode usar o seguinte loop para conseguir isso:</p>
-            <img src="img/loop_js-02-farm.png" alt="Imagem ilustrando os laços de repetição" class="main__code-img">
-            <p>Um loop geralmente possui um ou mais dos seguintes itens:</p>
-            <ul>
-                <li>O <strong>contador</strong>, que é inicializado com um certo valor - este é o ponto inicial do loop ("Iniciar: não tenho comida", figura acima).</li>
-                <li>A <strong>condição de saída</strong>, que é o critério no qual o loop pára - geralmente o contador atinge um certo valor. Isso é ilustrado por "Tenho comida suficiente?",  na figura acima. Vamos dizer que ele precisa de 10 porções de comida para alimentar sua família.</li>
-                <li>Um <strong>iterador</strong>, que geralmente incrementa o contador em uma pequena quantidade a cada loop, sucessivamente, até atingir a condição de saída. Nós não ilustramos explicitamente isso acima, mas poderíamos pensar sobre o agricultor ser capaz de coletar 2 porções de comida por hora. Depois de cada hora, a quantidade de comida que ele coletou é incrementada em dois, e ele verifica se ele tem comida suficiente. Se ele atingiu 10 porções (a condição de saída), ele pode parar de coletar e ir para casa.</li>
-            </ul>
-            <p>No seu pseudocode (en-US), isso seria algo como o seguinte:</p>
-            <div class="main__code-example">
-                loop(food = 0; foodNeeded = 10) { <br />
-                    if (food = foodNeeded) {<br />
-                      exit loop;<br />
-                      // Nós temos comida o suficiente, Vamos para casa<br />
-                    } else {<br />
-                      food += 2; // Passe uma hora coletando mais 2 alimentos(food)<br />
-                      // loop será executado novamente<br />
-                    }<br />
-                  }
-            </div>
-            <p>Assim, a quantidade de comida necessária é fixada em 10, e o montante que o agricultor tem atualmente é fixado em 0. Em cada iteração do ciclo, verificamos se a quantidade de alimento que o agricultor tem é igual à quantidade que ele precisa. Se assim for, podemos sair do loop. Se não, o agricultor gasta mais uma hora coletando duas porções de comida, e o laço é executado novamente.</p>
-        </section>
-        <section class="main-section" id="Referencias">
-            <header>Referências</header>
-            <p style="text-align: center;">Todas as referências dessa documentação foram retiradas do site da <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">MDN</a></p>
-        </section>
+        <section class="main-section"></section>
+        <section class="main-section"></section>
     </main>
-
-
-    <script>
-        var para = document.getElementById('player-code');
-
-        para.addEventListener('click', atualizarNome);
-
-        function atualizarNome() {
-        var nome = prompt('Insira um novo nome');
-        para.textContent = 'Jogador 1: ' + nome;
-        }
-    </script>
 </body>
 </html>

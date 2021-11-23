@@ -6,14 +6,15 @@
     font-family: 'Zilla Slab', serif;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    color: #4D4E53;
 }
 
+
 /*****************************************/
-/* 0. Tokens
+/* 1. Navbar
 ******************************************/
 .navbar {
     position: relative;
-
 }
 
 .navbar__container {
@@ -25,14 +26,6 @@
     padding-top: 64px;
     position: fixed;
     overflow-x: scroll;
-}
-
-.navbar__vertical-line {
-    height: 100%;
-    border-left: 1px solid black;
-    position: absolute;
-    left: 101%;
-    z-index: 999;
 }
 
 .navbar__title {
@@ -51,164 +44,50 @@ header {
     font-weight: 400;
     
 }
-.navbar__link {
+.nav-link{
     text-decoration: none;
     margin: 15px 10px;
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #000;
     margin-left: 10px;
 }
 
-.main {
-    width: 75%;
-    height: 3000px;
+@media (max-width: 984.55px) {
+    .navbar__container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .navbar__title {
+        width: 100%;
+        background-color: rgb(250, 245, 245);
+        position: fixed;
+        height: 4rem;
+        z-index: 999;
+    }
+}
+
+/*****************************************/
+/* 1. Main Section
+******************************************/
+
+.main-section {
+    width: 74vw;
     float: right;
 }
 
-h1 {
-    font-size: 2.5rem;
-    padding: 10px 35px;
+p {
+    margin: 1.8rem;
 }
 
-.main__h2 {
-    font-size: 2rem;
-    text-decoration: none;
-    color: black;
-    margin: 20px 50px;
+ul li{
+    margin: 2rem;
 }
 
-.main-section p {
-    font-size: 1.1rem;
-    margin: 20px;
-    max-width: 95%;
-    text-align: left;
-}
-
-.main__h2--hover:hover {
-    border-bottom: 1px solid;
-}
-
-.main__tutorial-link {
-    color: #134d6e;
-    padding: 6px;
-}
-
-.main__tutorial-link--hover:hover {
-    text-decoration: none;
-}
-
-ul, ol {
-    padding-left: 87px;
-}
-
-li {
-    margin: 15px;
-}
-
-.main__note-card {
-    background-color: #DDEAFF;
-    width: 75%;
-    text-align: left;
-    border-left: 6px solid #0072b3;
-    margin: 50px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    
-}
-
-.main__note-card > p {
-    font-size: 1.1rem;
-    padding: 15px;
-    
-}
-
-h2 {
-    font-size: 2.5rem;
-    padding: 10px 35px;
-}
-
-table {
-    width: 80%;
-    border: 1px solid black;
-    overflow-x: auto;
-    margin-left: 50px;
-    border-collapse: collapse;
-    margin-bottom: 50px;
-    margin-top: 3rem;
-}
-
-th {
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    background-color: #D5D5D5;
-    padding: 25px;
-}
-
-td {
-    text-align: center;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-collapse: collapse;
-}
-
-.main__img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-}
-
-.main__language-definition {
-    font-size: 1.05em;
-    padding: 5px;
-}
-
-.main__code-example {
-    width: 80%;
-    height: 20%;
-    background-color:#F4F4F4;
-    margin-left: 5%;
-    border-left: 6px solid #0072b3;
-    letter-spacing: 2px;
-    padding: 50px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-
-.main__code-img {
-    display: block;
-    margin: 40px;
-}
-
-.main__code-block {
-    letter-spacing: 2px;
-}
-
-.main__player-code {
-    font-family: 'helvetica neue', helvetica, sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px solid rgba(0,0,200,0.6);
-    background: rgba(0,0,200,0.3);
-    color: rgba(0,0,200,0.6);
-    box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
-    border-radius: 10px;
-    padding: 3px 10px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.main__note-card--yellow {
-    background-color: #FBEC74;
-    border-left: 6px solid #CBBD30;
-    padding: 20px;
-}
-
-code {
-    background-color: #f4f4f4;
-    padding: 0 3px;
-    font-family: consolas;
-    font-size: 0.9rem;
+@media (max-width: 984.55px) {
+    .main-section {
+        padding-top: 50vh;
+        width: 100%;
+    }
 }
