@@ -4,4 +4,4 @@
 * **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
 * **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
 
-![JS Guide] js-guide.gif
+![JS Guide](js-guide.gif)
