@@ -13,8 +13,10 @@
 /*****************************************/
 /* 1. Navbar
 ******************************************/
-.navbar {
+#navbar {
     position: relative;
+    width: 25%;
+    height: 100%;
 }
 
 .navbar__container {
