@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/**********************************/
+/* 0. Variáveis
+/* 1. Estilos gerais
+/* 2. Nav
+/* 
+/*
+/*
+/*
+/*
+/*
+/*
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+:root {
+    --ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+
+    --clr-black-light: rgb(35, 36, 38);
+    --clr-red: rgb(190, 49, 68);
+    --clr-blue: rgb(69, 86, 125);
+    --clr-white: #FFF;
+}
+
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-primary);
+    margin: 0;
+}
+
+/**********************************/
+/* 2. Nav
+/**********************************/
+.nav {
+    width: 100%;
+    background-color: var(--clr-red);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 1;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5rem;
+    list-style: none;
+}
+
+.nav-links li {
+    padding-left: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+}
+
+.nav-links li a {
+    
+}
